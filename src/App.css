@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vw;
+}
+
+.Maps{
+  border: solid 1px black;
+  width: 70vw;
+  height: 100vw;
+}
+
+.Box{
+  border: solid 1px black;
+  width: 30vw;
+  background-color: rgb(243, 231, 217);
+}
+
+.cont-Box{
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-box{
+  display: flex;
+}
+
+.OutlinedInput{
+  margin: 10px;
+  flex: 1;
+}
+
+OutlinedInput{
+  width: 100%;
+}
+
+.cont-boton{
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.imagen{
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 320px) {
+  .Maps{
+    width: 50vw;
+    height: 100%;
+  }
+  
+  .Box {
+    width: 50vw;
+    height: 100%;
+  }
+
+ .sub-box{
+    display: block;
+  }
+  .App{
+    height: 100vh;
+  }
+  MapContainer{
+    height: 100vh;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .Maps{
+    width: 50vw;
+    height: 100%;
+  }
+  .Box {
+    width: 50vw;
+    height: 100%;
+  }
+  .sub-box{
+    display: block;
+  }
+  .cont-boton{
+    display: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .App{
+    height: 100vh;
+  }
+  MapContainer{
+    height: 100vh;
+  }
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
